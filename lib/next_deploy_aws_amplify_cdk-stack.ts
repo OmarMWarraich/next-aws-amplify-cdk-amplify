@@ -11,7 +11,7 @@ export class NextDeployAwsAmplifyCdkStack extends cdk.Stack {
       appName: "Nextjs Hosting Example",
       sourceCodeProvider: new GitHubSourceCodeProvider({
         owner: "OmarMWarraich",
-        repository: "next-example-hosty",
+        repository: "next-example-hosting",
         oauthToken: cdk.SecretValue.secretsManager("github-token-ex"),
     }),
     autoBranchDeletion: true,
